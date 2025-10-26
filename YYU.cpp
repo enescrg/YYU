@@ -9,6 +9,70 @@ int main(){
 
 
     /*
+    int t1, t2;
+            //Deðerler kullanýcýdan alýnacaksa
+    //cout << "Baþlangýç deðerlerini giriniz: \n";
+    //cin >> t1;
+    //cout << "2. deðeri girin: ";
+    //cin >> t2;
+	t1 = -1;
+	t2 = 1;
+    for (int i = -5; i <= 5; i+=6) {
+        t1 = t1 + 2 * i;
+        for (int j = 5; j >= 1; j-=3)
+        {
+			t1 = t1 - 2 * j;
+			t2 = t2 - 2 * i;
+		}t2 = t2 + i;
+	}cout << "t1 deðeri: " << t1 << "\n" << "t2 deðeri: " << t2 << endl;
+	return 0;
+    */
+
+    /*
+    int gunler;
+    cout << "Lütfen bir sayý giriniz (1-7 arasý): \n";
+	cin >> gunler;
+    switch (gunler)
+    {
+        case 1:
+            cout << "Pazartesi" << endl;
+		    break;
+        case 2:
+			cout << "Salý" << endl;
+            break;
+		case 3:
+            cout << "Çarþamba" << endl;
+            break;
+		case 4:
+            cout << "Perþembe" << endl;
+			break;
+        case 5:
+            cout << "Cuma" << endl;
+			break;
+        case 6:
+		    cout << "Cumartesi" << endl;
+            break;
+	    case 7:
+            cout << "Pazar" << endl;
+            break;
+        default:
+            cout << "Geçersiz giriþ yaptýnýz. Lütfen 1 ile 7 arasýnda bir sayý giriniz." << endl;
+			break;
+    }
+    */
+
+    /*
+    int d;
+	cout << "Lütfen toplanacak deðerlerin üst sýnýrýný giriniz: \n";
+	cin >> d;
+	int toplam = 0;
+    for (int i = 1; i <= d; i++) {
+        toplam += i;
+	}
+    cout << "1'den " << d << "'e kadar olan sayýlarýn toplamý: " << toplam << endl;
+    */
+
+    /*
 	int k;                      //burada while döngüsü ile toplama iþlemi yapýlacak
     float t = 0;
 	cout << "Tek sayýlarýn üst sýnýrý: \n";
