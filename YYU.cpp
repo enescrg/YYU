@@ -6,12 +6,43 @@
 using namespace std;
 int main(){
 
-	
 
 
+    /*
+	int k;                      //burada while döngüsü ile toplama iþlemi yapýlacak
+    float t = 0;
+	cout << "Tek sayýlarýn üst sýnýrý: \n";
+	cin >> k;
+	int i1 = 1;
+	while (i1 <= k)
+    {
+        t += i1;
+        i1 += 2;
+	}cout << "Sonuç: " << t << endl;
 
+	int n;                      //burada do while döngüsü ile toplama iþlemi yapýlacak
+	cout << "Çift sayýlarýn üst sýnýrýný belirleyin: \n";
+	cin >> n;
+	int i2 = 2;
+    int toplam = 0;
+    do
+    {
+		toplam += i2;
+        i2 += 2;
+    } while (i2 <= n);
+	cout << "Sonuç: " << toplam << endl;
 
-
+	int f;                      //burada formül ile toplama iþlemi yapýlacak
+	cout << "Bir tam sayý giriniz: \n";
+    cin >> f;
+    if ( f % 2 != 0)
+    {
+        f--;
+    }
+	int top = (f / 2) * (2 + f) / 2;
+	cout << "2'den " << f << "'e kadar olan çift sayýlarýn toplamý: " << top << endl;
+	return 0;
+    */
 
 	/* Hesap makinesi örneði yapýlacak. 
     Detaylý ve yeni projede*/
