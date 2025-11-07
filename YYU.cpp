@@ -4,10 +4,113 @@
 #include <cmath>
 #include <limits>
 using namespace std;
+
+int N; // evrensel olarak tanýmladýk ki main gibi diðer fonksiyonlarda da kullanabilelim
 int main(){
 
+    /*
+	//karekök için #include <cmath> kütüphanesini ekledik
+	int boyut;
+	cout << "Matrisin boyutunu giriniz: \n";
+	cin >> boyut;
+	
+	//!!Dinamik olarak matris ve köþegen dizisi tanýmlamasý, en sonda bellekten sileceðiz
+	int** matris = new int* [boyut]; // dinamik kare matris tanýmlamasý
+	for (int i = 0; i < boyut; i++) {
+		matris[i] = new int[boyut];
+	}
+	int* kosegen = new int[boyut]; // köþegen elemanlarý için dinamik dizi tanýmlamasý
 
+	//Derste aþaðýdaki gibi yapýldý ancak c++'ta bu þekilde tanýmlama yok.
+    //int matris[boyut][boyut]; // kare matris tanýmlamasý
+	//int kosegen[boyut]; // köþegen elemanlarý için dizi tanýmlamasý
 
+    cout << "Matrisin elemanlarýný giriniz: \n";
+	for (int i = 0; i < boyut; i++) {
+		for (int j = 0; j < boyut; j++) {
+			//i+1 ve j+1 indisleri ile deðil,böyle daha anlaþýlýr buluyorum
+            cout << "Matris[" << i << "][" << j << "]: \n";
+			cin >> matris[i][j];
+		}
+	}
+
+	// köþegen elemanlarýný bulma
+	for (int i = 0; i < boyut; i++) {
+		kosegen[i] = matris[i][i];
+	}
+
+	int enbuyuk = kosegen[0], enkucuk = kosegen[0];
+	for (int i = 1; i < boyut; i++) {
+		if (kosegen[i] > enbuyuk) {
+            enbuyuk = kosegen[i];
+		}
+        else if (kosegen[i] < enkucuk) {
+            enkucuk = kosegen[i];
+        }
+	}
+
+	double alt_toplam = 0, ust_toplam = 0;
+	int alt_eleman = 0, ust_eleman = 0;
+	for (int i = 0; i < boyut; i++) {
+		for (int j = 0; j < boyut; j++) {
+			if (i > j) { // alt üçgen elemanlarý
+                alt_toplam += matris[i][j];
+                alt_eleman++;
+            }
+			else if (i < j) { // üst üçgen elemanlarý
+                ust_toplam += matris[i][j];
+                ust_eleman++;
+			}
+		}
+	}
+
+    double alt_ortalama = alt_eleman > 0 ? alt_toplam / alt_eleman : 0;
+	double ust_ortalama = ust_eleman > 0 ? ust_toplam / ust_eleman : 0;
+    double alt_karekok = sqrt(alt_ortalama);
+	double ust_karekok = sqrt(ust_ortalama);
+    
+    cout << "\nKöþegen elemanlarý               : ";
+	for (int i = 0; i < boyut; i++) {
+		cout << kosegen[i] << " ";
+	}
+	
+    cout << "\nEn   büyük köþegen elemaný        : " << enbuyuk;
+	cout << "\nEn   küçük köþegen elemaný        : " << enkucuk;
+	cout << "\nAlt  üçgen ortalamasý             : " << alt_ortalama;
+	cout << "\nAlt  üçgen ortalamasýnýn karekökü : " << alt_karekok;
+	cout << "\nÜst  üçgen ortalamasý             : " << ust_ortalama;
+	cout << "\nÜst  üçgen ortalamasýnýn karekökü : " << ust_karekok;
+
+	//!!Dinamik olarak doldurduðumuz dizileri ve matrisleri bellekten temizleme
+    for (int i = 0; i < boyut; i++)
+    {
+		delete[] matris[i]; // her satýrý sil
+    }
+	delete[] matris; // satýr iþaretçilerini sil
+	delete[] kosegen; // köþegen dizisini sil
+
+	return 0;
+    */
+
+    /*
+    //evrensel N deðiþkenini burada kullandýk
+	cout << "Dizinin boyutunu giriniz: \n";
+	cin >> N;
+	int* A = new int[N]; // dinamik dizi tanýmlamasý
+
+	for (int i = 0; i < N; i++) {
+		cout << "Dizinin " << i + 1 << ". elemanýný giriniz: \n";
+		cin >> A[i];
+	}
+	cout << "Dizinin elemanlarý: \n";
+	for (int i = 0; i < N; i++) {
+        cout << "A(" << i + 1 << ") = " << A[i] << endl;
+        
+	} 
+    delete[] A; // dinamik diziyi bellekten temizleme
+    return 0;
+    */
+    
     /*
     int t1, t2;
             //Deðerler kullanýcýdan alýnacaksa
